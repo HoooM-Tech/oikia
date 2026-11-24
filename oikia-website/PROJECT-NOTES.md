@@ -18,11 +18,11 @@ No client work, client logos, metrics, testimonials, programme dates, prices or 
 
 ## Content and integration still required
 
-Final service scope, company history, approved project evidence, PodCreators Africa details, public contact mailbox, booking link, Substack links, legal copy, final brand font files and exact brand colour specifications.
+Final service scope, company history, approved project evidence, POD Creators Africa details, public contact mailbox, booking link, Substack links, legal copy and final brand font files.
 
 ## Assets
 
-- Wordmark and standalone O: vector paths extracted from the supplied Logo 2 direction.pdf. The full wordmark is unchanged; all standalone marks use its O.
+- Final V2 wordmark and standalone O: vector paths extracted from Logo 2 direction V2.pdf, including the revised left-shifted inner counter. Dark, white and lime SVG variants are provided.
 - filmmaker.webp, behind-the-scenes.webp, culture.webp: illustrative images extracted from that supplied identity direction.
 - portrait.jpg: ade / Unsplash, https://unsplash.com/photos/B0q7eBuXKjA .
 - conversation.mp4 and poster: Alexander Suhorucov / Pexels, https://www.pexels.com/video/video-of-a-woman-talking-6534937/ .
@@ -33,3 +33,9 @@ Final service scope, company history, approved project evidence, PodCreators Afr
 Static document root: dist/. No runtime dependencies. Run python scripts/build_pages.py after editing the shared templates or page content in src/.
 
 The homepage hero includes a faint, decorative OIKIA wordmark. The Media Strategy artwork switches its text to white against the blue background.
+
+## Final brand update — 19 November 2026
+
+All pages and the handoff use the final V2 identity. The shared palette is defined in dist/assets/brand.css, with source values in brand-palette.json. The swatch grid supplies the extended palette; the blue icon example supplies the primary application blue. The approved PDF is available at dist/assets/brand-direction-v2.pdf.
+
+The optional scripts/sync_brand.py exports logo paths and colour values from the final PDF (requires PyMuPDF); no extra dependency is needed to run the website.

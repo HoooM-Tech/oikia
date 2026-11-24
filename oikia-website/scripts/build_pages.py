@@ -21,14 +21,15 @@ for page,(path,title,description) in pages.items():
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#f5f2e9">
+  <meta name="theme-color" content="#f4f0e8">
   <meta name="description" content="'''+escape(description,quote=True)+'''">
   <title>'''+escape(title)+'''</title>
-  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="/assets/mark.svg?v=brand-v2-20261119" type="image/svg+xml">
   <link rel="preload" href="/assets/font-0.ttf" as="font" type="font/ttf" crossorigin>
+  <link rel="stylesheet" href="/assets/brand.css?v=brand-v2-20261119">
   <link rel="stylesheet" href="/assets/fonts.css">
-  <link rel="stylesheet" href="/style.css">
-  <link rel="stylesheet" href="/pages.css">
+  <link rel="stylesheet" href="/style.css?v=brand-v2-20261119">
+  <link rel="stylesheet" href="/pages.css?v=brand-v2-20261119">
   <script src="/app.js" defer></script>
 </head>
 <body data-current-page="'''+page+'''">

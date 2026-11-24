@@ -49,13 +49,20 @@
 }
 
 :root {
-  --paper: #f5f2e9;
-  --ink: #171715;
-  --muted: #696961;
-  --line: #d7d4cb;
-  --lime: #d8f205;
-  --blue: #345bff;
-  --orange: #f47b45;
+  --paper: #f4f0e8;
+  --ink: #101010;
+  --logo-ink: #100c15;
+  --muted: #3b3b3b;
+  --line: #d8cfc0;
+  --stone: #d8cfc0;
+  --lime: #d7f205;
+  --blue: #2f5bff;
+  --electric-blue: #345bff;
+  --orange: #f27a42;
+  --sage: #a8b79b;
+  --yellow: #f1e79b;
+  --charcoal: #3b3b3b;
+  --white: #ffffff;
   --ease: cubic-bezier(.2, .7, .2, 1);
   --gutter: clamp(24px, 5.1vw, 88px);
 }
@@ -201,14 +208,14 @@ section {
   justify-content: space-between;
   gap: 22px;
   padding: 0 var(--gutter);
-  background: #f5f2e9e8;
+  background: #f4f0e8e8;
   backdrop-filter: blur(18px);
   transition: box-shadow .4s, background .4s;
 }
 
 .site-header.scrolled {
-  background: #f5f2e9f5;
-  box-shadow: 0 1px 0 #17171515;
+  background: #f4f0e8f5;
+  box-shadow: 0 1px 0 #10101015;
 }
 
 .brand {
@@ -286,7 +293,7 @@ section {
 }
 
 .button:hover {
-  background: #33332f;
+  background: var(--charcoal);
 }
 
 .button:hover .arrow {
@@ -525,7 +532,7 @@ section {
 
 .media-card:hover, .media-card:focus-visible {
   z-index: 5;
-  box-shadow: 0 22px 34px -18px #27231499;
+  box-shadow: 0 22px 34px -18px #100c1599;
 }
 
 .media-card:hover .card-image img {
@@ -686,7 +693,7 @@ section {
 .marquee-track > img {
   width: 34px;
   height: 39px;
-  filter: invert(87%) sepia(80%) saturate(1858%) hue-rotate(12deg) brightness(105%) contrast(101%);
+  filter: none;
 }
 
 .marquee:hover .marquee-track {
@@ -736,7 +743,7 @@ section {
 }
 
 .reading-text .word {
-  color: #bcbab2;
+  color: var(--stone);
   transition: color .35s;
 }
 
@@ -869,7 +876,7 @@ section {
 .art-lines {
   position: absolute;
   inset: -20%;
-  border: 1px solid #17171533;
+  border: 1px solid #10101033;
   transform: rotate(30deg);
   border-radius: 50%;
 }
@@ -878,7 +885,7 @@ section {
   content: "";
   position: absolute;
   inset: 13%;
-  border: 1px solid #17171533;
+  border: 1px solid #10101033;
   border-radius: 50%;
 }
 
@@ -895,7 +902,7 @@ section {
   border-radius: 120px 120px 5px 5px;
   overflow: hidden;
   transform: rotate(9deg);
-  box-shadow: 12px 14px 0 #1717151c;
+  box-shadow: 12px 14px 0 #1010101c;
   transition: transform 1s var(--ease);
 }
 
@@ -1099,7 +1106,7 @@ section {
 .community-copy > p {
   max-width: 345px;
   font-size: 14px;
-  color: #b4b5aa;
+  color: var(--stone);
   line-height: 1.8;
 }
 
@@ -1115,7 +1122,7 @@ section {
 }
 
 .button-lime:hover {
-  background: #e8ff38;
+  background: var(--yellow);
 }
 
 .button-lime:hover .arrow {
@@ -1231,7 +1238,7 @@ section {
   bottom: 15px;
   left: 10px;
   font-size: 9px;
-  color: #aaa;
+  color: var(--stone);
   letter-spacing: .05em;
   line-height: 1.5;
   transform: rotate(-8deg);
@@ -1263,7 +1270,7 @@ section {
   position: relative;
   overflow: hidden;
   border-radius: 4px;
-  background: #d5d2c9;
+  background: var(--stone);
 }
 
 .perspective-image > img {
@@ -1384,7 +1391,7 @@ section {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border-top: 1px solid #17171544;
+  border-top: 1px solid #10101044;
   padding-top: 24px;
   font-size: 12px;
 }
@@ -1485,12 +1492,12 @@ section {
   align-items: center;
   gap: 8px;
   padding: 8px 11px;
-  border: 1px solid #17171522;
-  background: #f5f2e9dd;
+  border: 1px solid #10101022;
+  background: #f4f0e8dd;
   backdrop-filter: blur(12px);
   border-radius: 30px;
   font-size: 9px;
-  box-shadow: 0 2px 10px #17171508;
+  box-shadow: 0 2px 10px #10101008;
 }
 
 .motion-icon {
@@ -1535,7 +1542,7 @@ dialog {
 }
 
 dialog::backdrop {
-  background: #171715b8;
+  background: #101010b8;
   backdrop-filter: blur(12px);
 }
 
@@ -1587,7 +1594,7 @@ dialog[open] {
 .story-visual {
   position: relative;
   min-height: 530px;
-  background: #35382d;
+  background: var(--charcoal);
   overflow: hidden;
 }
 
@@ -1620,7 +1627,7 @@ dialog[open] {
   right: 18px;
   border: 1px solid #fffa;
   color: white;
-  background: #17171555;
+  background: #10101055;
   backdrop-filter: blur(10px);
   height: 40px;
   width: 40px;
@@ -1651,7 +1658,7 @@ dialog[open] {
 .story-text {
   font-size: 14px;
   line-height: 1.85;
-  color: #b4b5aa;
+  color: var(--stone);
 }
 
 .story-copy > .text-link {
@@ -1687,7 +1694,7 @@ dialog[open] {
 
 .story-count {
   font-size: 9px;
-  color: #b4b5aa;
+  color: var(--stone);
 }
 
 .light-dialog {
@@ -1765,7 +1772,7 @@ dialog[open] {
 
 .preview-notice {
   font-size: 10px !important;
-  background: #e7e4da;
+  background: var(--stone);
   padding: 10px 13px;
   margin: 0 0 25px;
 }
@@ -1833,7 +1840,7 @@ input, select, textarea {
   width: 100%;
   display: block;
   border: 0;
-  border-bottom: 1px solid #aaa99f;
+  border-bottom: 1px solid var(--stone);
   background: transparent;
   border-radius: 0;
   font-size: 13px;
@@ -1847,7 +1854,7 @@ input:focus, select:focus, textarea:focus {
 }
 
 input::placeholder, textarea::placeholder {
-  color: #828278;
+  color: #3b3b3bb3;
 }
 
 textarea {
@@ -2584,7 +2591,7 @@ form .button {
     padding: 20px 27px;
     flex-direction: column;
     gap: 0;
-    box-shadow: 0 15px 25px #17171522;
+    box-shadow: 0 15px 25px #10101022;
   }
   .mobile-nav > a, .mobile-nav > button {
     display: flex;

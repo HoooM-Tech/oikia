@@ -1,6 +1,6 @@
 # OIKIA — developer handoff
 
-Prepared 16 November 2026.
+Updated 19 November 2026 — final client-approved V2 identity.
 
 Live concept: https://oikia-stories-in-motion.laceyparrot2.chatgpt.site
 
@@ -44,7 +44,10 @@ Blog article previews open within the Blog page and use hash links. They do not 
 | dist/style.css | Original layout, colours, typography and motion |
 | dist/pages.css | Five-page layout additions, fixed navigation, footer content layout and requested refinements |
 | dist/app.js | Media stories, motion controls, menus, service artwork, forms, footer previews and Blog reader |
-| dist/assets/ | Local SVG logo marks, photographs, video and fonts |
+| dist/assets/ | Final V2 SVG marks, brand PDF, photographs, video and fonts |
+| dist/assets/brand.css | Shared approved colour tokens |
+| dist/assets/brand-palette.json | Recorded PDF colour values |
+| BRAND.md | Final brand reference and SVG variant inventory |
 | src/home.html and other page templates | Main content for each of the five pages |
 | src/header.html | Shared five-page navigation and discovery-call button |
 | src/footer.html | Shared oversized-wordmark footer and footer content |
@@ -62,7 +65,7 @@ Then refresh the local website. CSS, JavaScript and media are edited directly in
 ## Visual direction to preserve
 
 - Expressive editorial typography, generous spacing and media-led interaction.
-- The approved OIKIA wordmark, including its K within the full wordmark.
+- The final V2 OIKIA wordmark, including the revised left-shifted O counter.
 - The standalone O extracted from that wordmark, used for the favicon and decorative brand marks.
 - The large, faint OIKIA wordmark behind the homepage hero.
 - The oversized footer wordmark and the existing footer visual style.
@@ -71,17 +74,24 @@ Then refresh the local website. CSS, JavaScript and media are edited directly in
 
 ## Current design tokens
 
-These are the values used in this concept. Final brand specifications should take precedence when supplied.
+The final V2 PDF supplies the colours below. Its icon application blue and extended palette-grid blue are recorded separately. All pages share dist/assets/brand.css; BRAND.md records the brand assets and values.
 
-| Token | Value |
+| Colour | Hex |
 | --- | --- |
-| Paper | #f5f2e9 |
-| Ink | #171715 |
-| Muted text | #696961 |
-| Rules/borders | #d7d4cb |
-| Lime | #d8f205 |
-| Blue | #345bff |
-| Orange | #f47b45 |
+| Cream / page background | #f4f0e8 |
+| Black / text | #101010 |
+| Logo ink | #100c15 |
+| Stone | #d8cfc0 |
+| Lime | #d7f205 |
+| Charcoal | #3b3b3b |
+| Primary blue / icon application | #2f5bff |
+| Electric blue / palette grid | #345bff |
+| Orange | #f27a42 |
+| Sage | #a8b79b |
+| Soft yellow | #f1e79b |
+
+| Type / motion | Value |
+| --- | --- |
 | Primary typeface | DM Sans |
 | Editorial typeface | Instrument Serif |
 | Main motion easing | cubic-bezier(.2,.7,.2,1) |
@@ -123,13 +133,13 @@ Most motion values are defined directly in CSS or the Web Animations calls in ap
 7. Add the real Substack address and article links. Replace the clearly labelled draft articles with approved published content and connect subscriptions through Substack.
 8. Replace hello@oikia.example, @oikia.sample, the sample LinkedIn wording and The OIKIA Letter description with confirmed public contact details.
 9. Replace sample privacy, terms and cookie text with the client-approved versions.
-10. Confirm final brand fonts, colour specifications and permissions/licences for imagery.
+10. Confirm final brand font specifications and permissions/licences for imagery. The supplied V2 logo and colour palette are implemented.
 11. Configure the chosen hosting/domain and any agreed analytics. Preserve the page routes when deploying.
 12. Test the rendered layouts and complete connected flows on real browsers and mobile devices.
 
 ## Verification status
 
-The source corresponds to the published five-page concept, source revision 2d81b19bccc97633e10d1d640352e781719642cf.
+This source contains the five-page concept with the final client-approved V2 wordmark, revised O and palette, updated 19 November 2026. The shared navigation, footer style and media interactions are retained.
 
 Navigation, local asset paths, in-page anchors, dialog labels, CSS parsing and JavaScript syntax were checked. DOM smoke checks covered page initialization, booking-tab selection, menu behaviour, sample footer dialogs, service artwork state, inline enquiry preview and the Blog reader.
 
@@ -137,6 +147,6 @@ Visual browser QA and live booking, enquiry and Substack integration tests remai
 
 ## Access and assets
 
-The live concept was owner-private when this package was prepared. The owner will need to grant developer access through the site's sharing controls if the live link is used. The ZIP can be inspected and run locally without access to that hosted preview.
+The hosted concept uses restricted sharing. Existing authorized reviewers retain access; new recipients need their own viewer invitation. The ZIP can be inspected and run locally without access to the hosted preview.
 
-Asset sources and font licences are recorded in ASSETS.md and licences/. The client-supplied PDFs are not included in this export; request those separately if needed for context.
+Asset sources and font licences are recorded in ASSETS.md and licences/. The final brand PDF is included at dist/assets/brand-direction-v2.pdf. The earlier discovery and CRD documents can be requested separately.

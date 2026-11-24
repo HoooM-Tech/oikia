@@ -1,0 +1,48 @@
+  <dialog class="story-dialog" aria-labelledby="story-title">
+    <div class="story-shell">
+      <div class="story-top"><span>OIKIA / A DIFFERENT WAY OF SEEING</span><button class="dialog-close" data-close aria-label="Close story">×</button></div>
+      <div class="story-body">
+        <div class="story-visual"><img id="story-image" src="/assets/portrait.jpg" alt=""><video id="story-video" muted playsinline loop preload="none" poster="/assets/conversation.jpg" hidden><source src="/assets/conversation.mp4" type="video/mp4"></video><button class="story-play" aria-label="Pause video" hidden>Ⅱ</button><span class="story-media-note">VISUAL MOOD / ILLUSTRATIVE MEDIA</span></div>
+        <div class="story-copy"><span class="story-category"></span><h2 id="story-title"></h2><p class="story-text"></p><button class="text-link" data-story-contact><span>Let’s tell your story</span><span>↗</span></button><div class="story-pagination"><button class="story-prev" aria-label="Previous story">←</button><span class="story-count" aria-live="polite"></span><button class="story-next" aria-label="Next story">→</button></div></div>
+      </div>
+    </div>
+  </dialog>
+
+  <dialog class="community-dialog light-dialog" aria-labelledby="community-dialog-title">
+    <button class="dialog-close" data-close aria-label="Close POD Creators Africa details">×</button>
+    <span class="dialog-eyebrow"><span class="live-dot"></span> PODCREATORS AFRICA</span>
+    <h2 id="community-dialog-title">More voices.<br><em>More possibility.</em></h2>
+    <p>Independent creators and brands are part of Africa’s podcasting story. POD Creators Africa brings that community into focus.</p>
+    <div class="community-values"><div><span>01</span><h3>Connection</h3><p>Space for creators and brands to find each other.</p></div><div><span>02</span><h3>Knowledge</h3><p>Sharing perspectives and best practices in podcasting.</p></div><div><span>03</span><h3>Possibility</h3><p>Exploring the next chapter of Africa’s podcasting ecosystem.</p></div></div>
+    <p class="quiet-note">Programme details, dates and participation options are still being confirmed.</p>
+    <a class="button" href="/pod-creators-africa/"><span>Explore POD Creators Africa</span><span class="arrow">↗</span></a>
+  </dialog>
+
+  <dialog class="contact-dialog light-dialog" aria-labelledby="contact-dialog-title">
+    <button class="dialog-close" data-close aria-label="Close conversation form">×</button>
+    <span class="dialog-eyebrow">GOOD STORIES START WITH A CONVERSATION.</span>
+    <h2 id="contact-dialog-title">What’s on<br><em>your mind?</em></h2>
+    <div class="contact-tabs" role="tablist" aria-label="Ways to get in touch">
+      <button id="enquiry-tab" role="tab" aria-selected="true" aria-controls="enquiry-panel" tabindex="0">Send an enquiry</button>
+      <button id="booking-tab" role="tab" aria-selected="false" aria-controls="booking-panel" tabindex="-1">Book a discovery call</button>
+    </div>
+    <div id="enquiry-panel" role="tabpanel" aria-labelledby="enquiry-tab">
+      <p class="preview-notice">Design preview · Your information stays in this browser and is not sent.</p>
+      <form id="enquiry-form" data-enquiry-form>
+        <div class="form-pair"><label>Your name<input name="name" autocomplete="name" required placeholder="What should we call you?"></label><label>Email address<input name="email" type="email" autocomplete="email" required placeholder="you@company.com"></label></div>
+        <div class="form-pair"><label>Company or podcast <span class="optional">(optional)</span><input name="company" autocomplete="organization" placeholder="The story you’re building"></label><label>What are you interested in?<select name="service"><option value="">Let’s figure it out together</option><option>Podcast marketing</option><option>Podcast management</option><option>Consultation</option><option>Media strategy</option><option>POD Creators Africa</option></select></label></div>
+        <label>Tell us a little about your idea<textarea name="project" required placeholder="The big idea, the early thought, or the question"></textarea></label>
+        <button class="button" type="submit"><span>Preview my enquiry</span><span class="arrow">↗</span></button>
+      </form>
+      <div class="enquiry-preview" data-enquiry-preview hidden><h3 tabindex="-1">Your idea. In good company.</h3><dl></dl><p>This is an enquiry preview. Your information has not been sent.</p><button id="edit-enquiry" data-edit-enquiry class="text-link"><span>Edit my enquiry</span><span>↗</span></button></div>
+    </div>
+    <div id="booking-panel" role="tabpanel" aria-labelledby="booking-tab" hidden>
+      <p>Make room for a fresh perspective.</p><p>A discovery call is a chance to talk through your idea and explore how OIKIA can help.</p><p class="preview-notice">Call booking is not available in this design preview. The scheduling link is still to be confirmed.</p><button class="text-link" id="enquiry-instead"><span>Preview an enquiry instead</span><span>↗</span></button>
+    </div>
+  </dialog>
+<dialog class="info-dialog light-dialog" aria-labelledby="info-title">
+  <button class="dialog-close" data-close aria-label="Close details">×</button>
+  <span class="dialog-eyebrow" id="info-eyebrow">SAMPLE COPY / FOR DESIGN REVIEW</span>
+  <h2 id="info-title"></h2>
+  <div class="info-copy"></div>
+</dialog>

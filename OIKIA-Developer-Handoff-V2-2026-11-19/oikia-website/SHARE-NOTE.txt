@@ -1,0 +1,8 @@
+Please use the attached OIKIA website concept and source files as the visual and interaction reference for development.
+
+Start with README-FIRST.md. The five-page site runs locally from the included dist folder; no Figma file is needed.
+
+Please preserve the approved wordmark, standalone O marks, faint hero wordmark, typography direction, oversized footer and media-led interaction. The guide lists the content and integrations that still need completing before launch.
+
+Live concept: https://oikia-stories-in-motion.laceyparrot2.chatgpt.site
+The live preview is private; access must be granted separately. The ZIP runs independently.

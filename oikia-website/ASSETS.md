@@ -2,8 +2,10 @@
 
 | Asset | Source |
 | --- | --- |
-| wordmark.svg | Exact vector outlines extracted from the client-supplied Logo 2 direction.pdf |
-| mark.svg | O outline extracted from that full wordmark |
+| wordmark.svg | Final vector outlines extracted from Logo 2 direction V2.pdf |
+| mark.svg | Revised left-shifted O outline from the final V2 wordmark |
+| wordmark-white.svg, mark-white.svg, mark-lime.svg | Final vector variants in white and approved lime |
+| brand.css, brand-palette.json, brand-direction-v2.pdf | Shared approved colours, recorded values and final source PDF |
 | filmmaker.webp, behind-the-scenes.webp, culture.webp | Illustrative media extracted from the supplied logo direction PDF |
 | portrait.jpg | ade / Unsplash: https://unsplash.com/photos/B0q7eBuXKjA |
 | conversation.mp4, conversation.jpg | Alexander Suhorucov / Pexels: https://www.pexels.com/video/video-of-a-woman-talking-6534937/ |

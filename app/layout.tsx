@@ -5,7 +5,7 @@ import Footer from '../components/layout/Footer';
 import { ModalProvider } from '../components/providers/ModalProvider';
 
 export const viewport: Viewport = {
-  themeColor: '#f5f2e9',
+  themeColor: '#f4f0e8',
   width: 'device-width',
   initialScale: 1
 };

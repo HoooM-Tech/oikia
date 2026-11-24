@@ -47,7 +47,7 @@ export const SERVICES: ServiceItem[] = [
     art: 'portrait.jpg',
     wordFirst: 'Find your',
     wordSecond: 'people.',
-    color: '#f47b45',
+    color: '#f27a42',
     tone: 'dark'
   },
   {
@@ -73,7 +73,7 @@ export const SERVICES: ServiceItem[] = [
     art: 'culture.webp',
     wordFirst: 'A fresh',
     wordSecond: 'perspective.',
-    color: '#d8f205',
+    color: '#d7f205',
     tone: 'dark'
   },
   {
